@@ -25,11 +25,11 @@ pip install -r requirements.txt
 pytest .
 ```
 
-### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Запуск проекта в Jenkins]()
+### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Запуск проекта в Jenkins](https://jenkins.autotests.cloud/job/API_part/)
 
 ![Jenkins_run](picture/jenk.png)
 
-### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Отчет о прохождении тестов в [Allure report](https://jenkins.autotests.cloud/job/UI_part/11/allure/#)
+### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Отчет о прохождении тестов в [Allure report](https://jenkins.autotests.cloud/job/API_part/10/allure/)
 #### Если тест запускался локально:
 Необходимо ввести в терминале команду: 
 ```
