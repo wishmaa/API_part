@@ -5,7 +5,7 @@ from requests import sessions
 from curlify import to_curl
 
 
-def reqres_api(method, url, **kwargs):
+def api_request(method, url, **kwargs):
     base_url = 'https://reqres.in/api'
     new_url = base_url + url
     with allure.step(f"{method.upper()} {new_url}"):
