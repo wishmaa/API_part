@@ -3,3 +3,4 @@ requests==2.31.0
 jsonschema==4.19.0
 allure-pytest
 curlify == 2.2.1
+python-dotenv==0.20.0
