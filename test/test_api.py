@@ -1,12 +1,12 @@
 import allure
 from jsonschema.validators import validate
-from tests.conftest import reqres_api
+from test.conftest import reqres_api
 from utils.helper import load_schema
 
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check status code')
 def test_users_status_code():
     response = reqres_api(
@@ -18,7 +18,7 @@ def test_users_status_code():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check per_page param')
 def test_users_per_page():
     per_page = 3
@@ -34,7 +34,7 @@ def test_users_per_page():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check user schema')
 def test_user_schema():
     schema = load_schema('get_users_schema.json')
@@ -47,7 +47,7 @@ def test_user_schema():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check "User not found" status code')
 def test_users_not_found_status_code():
     response = reqres_api(
@@ -59,7 +59,7 @@ def test_users_not_found_status_code():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check create user')
 def test_create_user():
     response = reqres_api(
@@ -75,7 +75,7 @@ def test_create_user():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check create user schema')
 def test_schema_create_user():
     schema = load_schema('create_user_schema.json')
@@ -91,7 +91,7 @@ def test_schema_create_user():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check delete user')
 def test_delete_user():
     response = reqres_api(
@@ -103,7 +103,7 @@ def test_delete_user():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check registration')
 def test_user_registration():
     response = reqres_api(
@@ -119,7 +119,7 @@ def test_user_registration():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check failed registration')
 def test_user_registration_failed():
     response = reqres_api(
@@ -135,7 +135,7 @@ def test_user_registration_failed():
 
 @allure.label('owner', 'Roman Sh')
 @allure.tag('API')
-@allure.feature('Reqres.in tests')
+@allure.feature('Reqres.in test')
 @allure.title('Check update user')
 def test_user_update():
     response = reqres_api(
