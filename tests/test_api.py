@@ -40,8 +40,8 @@ def test_user_schema():
     schema = load_schema('get_users_schema.json')
     response = reqres_api(
         method='get',
-        url='/users')
-
+        url='/users'
+    )
     validate(instance=response.json(), schema=schema)
 
 
@@ -52,8 +52,8 @@ def test_user_schema():
 def test_users_not_found_status_code():
     response = reqres_api(
         method='get',
-        url='/users/23')
-
+        url='/users/23'
+    )
     assert response.status_code == 404
 
 
@@ -86,7 +86,6 @@ def test_schema_create_user():
         data={'name': 'TestUser',
               'job': 'Worker'}
     )
-    print(response.json())
     validate(instance=response.json(), schema=schema)
 
 
@@ -97,8 +96,8 @@ def test_schema_create_user():
 def test_delete_user():
     response = reqres_api(
         method='delete',
-        url='/users/693')
-
+        url='/users/693'
+    )
     assert response.status_code == 204
 
 
@@ -115,7 +114,6 @@ def test_user_registration():
             "password": "pistol"
         }
     )
-
     assert response.status_code == 200
 
 
@@ -131,7 +129,6 @@ def test_user_registration_failed():
             "email": "eve.holt@reqres.in",
             }
     )
-
     assert response.status_code == 400
     assert response.json()['error'] == 'Missing password'
 
@@ -149,7 +146,6 @@ def test_user_update():
             'job': 'worker'
         }
     )
-
     assert response.status_code == 200
     assert response.json()['name'] == 'Test'
     assert response.json()['job'] == 'worker'
