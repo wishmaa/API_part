@@ -30,6 +30,11 @@ pytest .
 ![Jenkins_run](picture/jenk.png)
 
 ### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Отчет о прохождении тестов в [Allure report](https://jenkins.autotests.cloud/job/UI_part/11/allure/#)
+#### Если тест запускался локально:
+Необходимо ввести в терминале команду: 
+```
+allure serve allure-results
+``` 
 ![Overview](picture/allure.png)
 
 ### <img width="3%" title="Allure Report" src="picture/tg.png"> Оповещение о прохождении тестов c кратким отчетом Telegram
