@@ -1,4 +1,4 @@
-# Проект API автотестов для демо-сайта https://reqres.in/
+## Проект API автотестов для демо-сайта [Reqres](https://reqres.in/)
 
 
 ### Содержит следующие API тесты:
@@ -17,7 +17,7 @@
 ### Для локального запуска
 1. Склонируйте репозиторий
 2. Откройте проект в PyCharm
-3. Введите в териминале команду
+3. Введите в терминале команду
 ``` 
 python -m venv .venv
 source .venv/bin/activate
@@ -25,11 +25,16 @@ pip install -r requirements.txt
 pytest .
 ```
 
-### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Запуск проекта в Jenkins]()
+### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Запуск проекта в Jenkins](https://jenkins.autotests.cloud/job/API_part/)
 
 ![Jenkins_run](picture/jenk.png)
 
-### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Отчет о прохождении тестов в [Allure report](https://jenkins.autotests.cloud/job/UI_part/11/allure/#)
+### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Отчет о прохождении тестов в [Allure report](https://jenkins.autotests.cloud/job/API_part/10/allure/)
+#### Если тест запускался локально:
+Необходимо ввести в терминале команду: 
+```
+allure serve allure-results
+``` 
 ![Overview](picture/allure.png)
 
 ### <img width="3%" title="Allure Report" src="picture/tg.png"> Оповещение о прохождении тестов c кратким отчетом Telegram
